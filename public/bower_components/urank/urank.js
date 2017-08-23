@@ -114,10 +114,13 @@ var Urank = (function(){
 
 var enterLog = function(value){
     var scriptURL = "http://localhost/loginapp/server/log.php",
-    //var scriptURL = "http://itic.uncu.edu.ar/hadoop/uRankNTLoginApp/server/log.php";
+        //var scriptURL = "http://itic.uncu.edu.ar/hadoop/uRankNTLoginApp/server/log.php";
         date = new Date(),
         timestamp = date.getFullYear() + '-' + (parseInt(date.getMonth()) + 1) + '-' + date.getDate() + '_' + date.getHours() + '.' + date.getMinutes() + '.' + date.getSeconds(),
-        urankState = urankState = $('#username').html()+',' + timestamp+','+value,
+        userName = $('#username').html(),
+        userToken = $('#usertoken').html(),
+        sessionId = $('#sessionid').html(),
+        urankState = sessionId + ',' + userName +',' + userToken + ',' + timestamp+','+value + ', simple app',
         gf = [{ filename: 'urank_labeled_' + timestamp + '.txt', content: urankState }];//JSON.stringify(urankState)
 
     $.generateFile({ filename: "bookmarks.json", content: urankState, script: scriptURL });
@@ -1076,14 +1079,14 @@ var enterLog = function(value){
          * Created by Jorch
          */
         onEnterLog: function(value){
-            //var scriptURL = "http://localhost/riskID/server/log.php",
-            var scriptURL = "http://itic.uncu.edu.ar/hadoop/riskID/app/server/log.php";
-                date = new Date(),
+            var scriptURL = "http://localhost/riskID/server/log.php",
+            //var scriptURL = "http://itic.uncu.edu.ar/hadoop/riskID/app/server/log.php";
+            date = new Date(),
                 timestamp = date.getFullYear() + '-' + (parseInt(date.getMonth()) + 1) + '-' + date.getDate() + '_' + date.getHours() + '.' + date.getMinutes() + '.' + date.getSeconds(),
                 userName = $('#username').html(),
                 userToken = $('#usertoken').html(),
                 sessionId = $('#sessionid').html(),
-                urankState = sessionId + ',' + userName +',' + userToken + ',' + timestamp+','+value,
+                urankState = sessionId + ',' + userName +',' + userToken + ',' + timestamp+','+value + ', simple app',
                 gf = [{ filename: 'urank_labeled_' + timestamp + '.txt', content: urankState }];//JSON.stringify(urankState)
 
             $.generateFile({ filename: "bookmarks.json", content: urankState, script: scriptURL });
