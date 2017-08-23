@@ -648,7 +648,7 @@ var DocViewer = (function(){
                         /*'<div class="urank-docviewer-divisor"></div>' +*/
                     '</div>' +
                     '<div style="width: 100%; margin: 5px">' +
-                        '<label><span>'+ botnet_left +' </span><span style="' + bot_style + '" urank-span-prediction-id="'+ document.id+'" class="document_view-botnet-bar"></span> <span>' + normal_rigth + '</span></label>' +
+                        '<label class="confidence_container"><span>'+ botnet_left +' </span><span style="' + bot_style + '" urank-span-prediction-id="'+ document.id+'" class="document_view-botnet-bar"></span> <span>' + normal_rigth + '</span></label>' +
                         '<div  style="margin: 5px">' +
                         heatmap[0].outerHTML() + heatmap[1].outerHTML() + heatmap[2].outerHTML() +heatmap[3].outerHTML() +heatmap[4].outerHTML() +heatmap[5].outerHTML() +heatmap[6].outerHTML() +heatmap[7].outerHTML() +heatmap[8].outerHTML() +heatmap[9].outerHTML() +
                         '</div>'+
@@ -746,7 +746,7 @@ var DocViewer = (function(){
                         /*'<div class="urank-docviewer-divisor"></div>' +*/
                     '</div>' +
                     '<div style="width: 100%; margin: 5px">' +
-                       '<label><span>'+ botnet_left +' </span><span style="' + bot_style + '" urank-span-prediction-id="'+ document.id+'" class="document_view-botnet-bar"></span> <span>' + normal_rigth + '</span></label>' +
+                       '<label class="confidence_container"><span>'+ botnet_left +' </span><span style="' + bot_style + '" urank-span-prediction-id="'+ document.id+'" class="document_view-botnet-bar"></span> <span>' + normal_rigth + '</span></label>' +
                         '<div style="margin: 5px">' +
                             heatmap[0].outerHTML() + heatmap[1].outerHTML() + heatmap[2].outerHTML() +heatmap[3].outerHTML() +heatmap[4].outerHTML() +heatmap[5].outerHTML() +heatmap[6].outerHTML() +heatmap[7].outerHTML() +heatmap[8].outerHTML() +heatmap[9].outerHTML() +
                         '</div>'+

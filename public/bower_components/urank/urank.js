@@ -397,7 +397,8 @@ var enterLog = function(value){
         connectionList.push(connection);
         connection_id.indexOf(connection.id) == -1 ? connection_id.push(connection.id):null;
         var aux = [];
-        if(connection.title == 'Unlabelled'){ //Si seleccionamos una conexion sin etiquetar entonces ordeno por los mas similares
+        //This section code is commented only for simple version
+        /*if(connection.title == 'Unlabelled'){ //Si seleccionamos una conexion sin etiquetar entonces ordeno por los mas similares
             var similar_data = _this.getSimilarConnectionsById(connection.id)
             var first_similar_botnet = true, first_similar_normal = true //Variable para quedarme con la conexion botnet/normal mas similar a la seleccionada
             similar_data.forEach(function(item){
@@ -421,7 +422,25 @@ var enterLog = function(value){
             data.forEach(function(item){
              item.id != connection.id && connection_id.indexOf(item.id) == -1 ? aux.push(item) : null;
              });
-        }
+        }*/
+        //Only for simple version
+        var first_similar_botnet = true, first_similar_normal = true //Variable para quedarme con la conexion botnet/normal mas similar a la seleccionada
+        data.forEach(function(item){
+            item.id != connection.id && connection_id.indexOf(item.id) == -1 ? aux.push(item) : null;
+            if(item.title == 'Botnet' && first_similar_botnet){
+                first_similar_botnet = false
+                _this.moreSimilarBotnet = item
+                _this.firstSimilar = _this.firstSimilar == ''? 'botnet' : _this.firstSimilar
+            }
+            if(item.title == 'Normal' && first_similar_normal){
+                first_similar_normal = false
+                _this.moreSimilarNormal = item
+                _this.firstSimilar = _this.firstSimilar == ''? 'normal' : _this.firstSimilar
+            }
+            if(!first_similar_botnet  && !first_similar_normal){
+                return false
+            }
+        });
         return connectionList.concat(aux);
     }
 

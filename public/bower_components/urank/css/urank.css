@@ -729,6 +729,13 @@ div#tabs-2{
     width: 10px;
     margin-right: 10px;
     background: blue;
+    /*Only for simple version*/
+    display: none;
+}
+
+/*Only for simple version*/
+.confidence_container{
+    display: none;
 }
 
 .botnet-bar{
