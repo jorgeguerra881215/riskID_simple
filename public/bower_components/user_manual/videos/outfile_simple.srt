@@ -1,0 +1,80 @@
+﻿1
+00:00:01,010 --> 00:00:03,540
+Hi
+In this video we are going to describe the RiskID application.
+
+2
+00:00:03,786 --> 00:00:06,965
+To start using RiskID you need get an user account. Let's do it.
+
+3
+00:00:07,917 --> 00:00:12,169
+Go to the end of user manual page and click Sign Up button.
+
+4
+00:00:15,046 --> 00:00:19,223
+Fill all field in form, submit it and log in.
+
+5
+00:00:52,535 --> 00:00:54,730
+Welcome to RiskID application.
+
+6
+00:00:56,491 --> 00:01:04,721
+This page show in left the Connection List. All connections were regrouped by their similarity.
+
+7
+00:01:12,572 --> 00:01:20,827
+There is three group easily identifiable by their different background color in the list.
+
+8
+00:01:25,621 --> 00:01:32,900
+Each connection in the list, from left to right, display information about their current label:
+red circle to botnet, green circle to normal and yellow circle to unlabeled.
+
+9
+00:01:36,469 --> 00:01:40,765
+Next to it the index number of the connection in the list is displayed.
+
+10
+00:01:45,222 --> 00:01:50,476
+Followed appears a color representation for three feature in the connection:
+periodicity (represented by orange), duration (represented by green) and size (represented by blue).
+
+11
+00:01:50,290 --> 00:01:58,483
+The intensity in the color represents the high or low presence of the characteristics in the connection.
+
+12
+00:01:59,631 --> 00:02:07,838
+If you clicked a connection in the list more information about that will be displayed in right section.
+
+13
+00:02:16,820 --> 00:02:30,047
+A bar chart display the connection symbol distribution, and a pie chart show connection periodicity feature.
+
+14
+00:03:16,144 --> 00:03:25,340
+When an unlabeled connection is selected the detailed block display both
+the botnet and normal label connection more close to selected connection.
+
+15
+00:03:38,074 --> 00:03:50,350
+To select a label for unlabeled connection two buttons are in the bottom of each connection view.
+
+16
+00:03:53,644 --> 00:04:05,834
+Red button to botnet label and green button to normal label.
+
+17
+00:04:17,492 --> 00:04:30,669
+You can also filter connections in the list using some options on top.
+
+18
+00:04:40,647 --> 00:04:50,529
+Once your task over, you could download the resultant labeled dataset doing clicked on the "Save Labeling" button.
+
+19
+00:04:50,865 --> 00:04:54,054
+Good Luck !!!
+
