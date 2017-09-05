@@ -42,6 +42,12 @@ If you clicked a connection in the list more information about that will be disp
 00:02:16.820 --> 00:02:30.047
 A bar chart display the connection symbol distribution, and a pie chart show connection periodicity feature.
 
+00:02:40.859 --> 00:03:00.036
+Click the button show sequences to show the STF character sequence for all connections in the Connection View.
+
+00:03:10.859 --> 00:03:15.036
+Click close all connections to clean the Connection View
+
 00:03:16.144 --> 00:03:25.340
 When an unlabeled connection is selected the detailed block display both
 the botnet and normal label connection more close to selected connection.
