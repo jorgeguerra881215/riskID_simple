@@ -114,7 +114,7 @@ var Urank = (function(){
 
 var enterLog = function(value){
     //var scriptURL = "http://localhost/loginapp/server/log.php",
-        var scriptURL = "http://itic.uncu.edu.ar/riskID/server/log.php",
+    var scriptURL = "http://itic.uncu.edu.ar:8880/riskID_simple/server/log.php",
         date = new Date(),
         timestamp = date.getFullYear() + '-' + (parseInt(date.getMonth()) + 1) + '-' + date.getDate() + '_' + date.getHours() + '.' + date.getMinutes() + '.' + date.getSeconds(),
         userName = $('#username').html(),
@@ -1080,7 +1080,7 @@ var enterLog = function(value){
          */
         onEnterLog: function(value){
             //var scriptURL = "http://localhost/riskID/server/log.php",
-            var scriptURL = "http://itic.uncu.edu.ar/riskID/server/log.php",
+            var scriptURL = "http://itic.uncu.edu.ar:8880/riskID_simple/server/log.php",
             date = new Date(),
                 timestamp = date.getFullYear() + '-' + (parseInt(date.getMonth()) + 1) + '-' + date.getDate() + '_' + date.getHours() + '.' + date.getMinutes() + '.' + date.getSeconds(),
                 userName = $('#username').html(),
@@ -1390,7 +1390,7 @@ var enterLog = function(value){
         },
         saveLabeling: function(){
             //var scriptURL = "http://localhost/loginapp/server/log.php",
-            var scriptURL = "http://itic.uncu.edu.ar/riskID/server/log.php",
+            var scriptURL = "http://itic.uncu.edu.ar:8880/riskID_simple/server/save.php",
                 date = new Date(),
                 timestamp = date.getFullYear() + '-' + (parseInt(date.getMonth()) + 1) + '-' + date.getDate() + '_' + date.getHours() + '.' + date.getMinutes() + '.' + date.getSeconds(),
                 urankState = this.getCurrentState(),
