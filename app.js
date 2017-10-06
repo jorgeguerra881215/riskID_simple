@@ -13,7 +13,7 @@ var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
 var mongo = require('mongodb');
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/loginapp');
+mongoose.connect('mongodb://192.168.1.49/loginapp');
 var db = mongoose.connection;
 
 var routes = require('./routes/index');
@@ -80,11 +80,12 @@ app.use('/',routes);
 app.use('/users', users);
 
 //Set Port
-app.set('port', (process.env.PORT || 3000));
+app.set('port', (process.env.PORT || 3200));
 
 app.listen(app.get('port'), function(){
     console.log('Server started on port ' +app.get('port'));
 });
+
 
 
 
