@@ -6,7 +6,7 @@ function datasetManager(){
         DS_Co: {
             description: 'Connections 22',
             //file: 'dataset_ctu13.json'
-            file: 'dataset_test.json'
+            file: 'dataset_test_4.json'
         }/*,
         DS_Ro: {
             description: 'Connections 87',
